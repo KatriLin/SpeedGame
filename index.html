@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Speed Game</title>
+  <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1> Speed Game </h1>
+  </header>
+  <main>
+    <p id="score"> Your score: </p>
+
+    <div class=wrapper>
+      <div class="round" id="ball0"></div>
+      <div class="round" id="ball1"></div>
+      <div class="round" id="ball2"></div>
+      <div class="round" id="ball3"></div>
+    </div>
+  </main>
+  <footer>
+    <button type="button" name="start" onclick=pickNext()><a href="#"> Start Game </a></button>
+    <button type="button" id="gamestop" name="stop" onclick=gameOver()><a href="#"> Stop Game </a></button>
+  </footer>
+  <div>
+    <div id="popwindow">
+      <button onClick="window.location.reload()"> Close</button>
+      <div class="popwindowtext">
+        <p id="endGame">Game Over!</p>
+        <p id="lastscore">Your score: </p>
+      </div>
+    </div>
+    <div class="cover" id="cover"> </div>
+  </div>
+
+  <script src="script.js">
+  </script>
+</body>
+
+</html>
